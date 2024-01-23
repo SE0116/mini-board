@@ -1,0 +1,187 @@
+
+.board-container {
+  background-color: black;
+  font-family: "Droid Sans-Regular", Helvetica;
+  font-weight: bold;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh; /* 화면 높이의 100% */
+  margin-top: 100px;
+}
+
+form {
+  max-width: 300px;
+  width: 100%;
+  margin-top: 20px;
+  border-radius: 10px;
+  margin-right: 500px;
+}
+
+/* 추가적으로 반응형 스타일링을 위한 미디어 쿼리 추가 가능 */
+@media (max-width: 600px) {
+  /* 화면 너비가 600px 이하일 때의 스타일 */
+  form {
+    max-width: 100%;
+  }
+}
+
+
+.guide {
+  font-size: 30px;
+}
+
+input {
+  font-size: 20px;
+  text-indent: 10px;
+}
+
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: black;
+}
+
+.logout-button {
+  background-color: black;
+  color: white;
+  border: 5px soild white;
+  cursor: pointer;
+  margin: 50px;
+}
+
+.edit-button {
+  border-radius: 20px;
+  width: 100px;
+  height: 50px;
+  font-size: 20px;
+  background-color: black;
+  color: white;
+}
+
+.board-button1{
+  background-color: white;
+  color: black;
+  border: 5px soild white;
+  cursor: pointer;
+  margin: 50px;
+}
+
+.faq-button1 {
+  background-color: black;
+  color: white;
+  border: 5px soild white;
+  cursor: pointer;
+  margin: 50px;
+}
+.crud-button {
+  background-color: black;
+  color: white;
+  border: 5px soild white;
+  cursor: pointer;
+  width: 60px;
+  height: 30px;
+  font-size: 15px;
+}
+
+.paginate-button {
+  background-color: black;
+  color: white;
+  border: 5px soild white;
+  cursor: pointer;
+  width: 100px;
+  height: 30px;
+  font-size: 15px;
+}
+
+
+.input-content {
+  height: 100px;
+}
+
+.post-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.post-info > div {
+  flex-grow: 1;
+  margin: 0 8px;
+}
+
+.post-info > div:first-child {
+  flex-grow: 3;
+}
+
+.new-post-label {
+  color: red;
+}
+
+.table-container {
+  width: 100%;
+  margin-top: 20px; /* 테이블과의 간격 조절을 위한 스타일 */  
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th {
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  text-align: left;
+  padding: 8px;
+  
+}
+
+td {
+  border-bottom: 1px solid gray;
+  text-align: left;
+  padding: 8px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all;
+}
+
+.author-cell {
+  width: 50px;
+}
+
+.title-cell {
+  width: 150px;
+}
+.category-cell {
+  width: 100px;
+}
+.content-cell {
+  width: 300px;
+}
+
+.timestamp-cell {
+  width: 100px;
+}
+
+.new-cell {
+  width: 50px;
+}
+
+.ud-cell {
+  width: 100px;
+}
+
+.new-post-label {
+  color: red;
+  font-weight: bold;
+}
